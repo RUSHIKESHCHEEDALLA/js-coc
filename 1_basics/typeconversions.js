@@ -49,4 +49,15 @@ let myObj={
 const myFunction=function(){
     console.log("hello world");
 }
-console.table([typeof bn,typeof names,typeof myObj,typeof myFunction]);
+// console.table([typeof bn,typeof names,typeof myObj,typeof myFunction]);
+
+//strings
+
+const name="rushikesh"
+const age=22
+console.log(`My Name is ${name} and my age is ${age}`)
+
+const clge=new String("CBITHYD")
+console.table([clge.length,clge.__proto__,clge[0],clge[4],clge.toUpperCase()])
+
+console.log(clge.replace("IT","IIT"))
