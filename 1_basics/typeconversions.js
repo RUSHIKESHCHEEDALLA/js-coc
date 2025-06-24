@@ -32,4 +32,21 @@ let d= "1"+"2" +"2"
 
 let x=3
 let y=x++
-console.table([x,y])
+// console.table([x,y])
+
+
+// console.table(["2">"1","2"==="2","2"===2,"2"<"3"]);
+
+// console.table([undefined>0,undefined==0,undefined>=0])
+// console.table([null>0,null==0,null===0,null>=0])
+
+let bn=123456789n
+const names=["rishi","kesh","ch"]
+let myObj={
+    name:"rushi",
+    age:22,
+}
+const myFunction=function(){
+    console.log("hello world");
+}
+console.table([typeof bn,typeof names,typeof myObj,typeof myFunction]);
