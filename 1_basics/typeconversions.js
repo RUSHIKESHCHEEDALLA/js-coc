@@ -55,9 +55,20 @@ const myFunction=function(){
 
 const name="rushikesh"
 const age=22
-console.log(`My Name is ${name} and my age is ${age}`)
+// console.log(`My Name is ${name} and my age is ${age}`)
 
-const clge=new String("CBITHYD")
-console.table([clge.length,clge.__proto__,clge[0],clge[4],clge.toUpperCase()])
+// const clge=new String("CBITHYD")
+// console.table([clge.length,clge.__proto__,clge[0],clge[4],clge.toUpperCase()])
 
-console.log(clge.replace("IT","IIT"))
+// console.log(clge.replace("IT","IIT"))
+
+// const date=new Date()
+// console.table([date,date.toString(),date.toDateString(),typeof date])
+
+// let newdate=new Date(2023,5,31)
+// console.log(newdate)
+// console.log(newdate.toString())
+
+// let mytime=Date.now()
+// console.log(mytime)
+
