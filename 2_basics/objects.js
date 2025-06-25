@@ -40,4 +40,4 @@ const user={
     }
 }
 
-console.log(user.fullname)
+// console.log(user.fullname)
