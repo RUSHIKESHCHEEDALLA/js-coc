@@ -40,7 +40,7 @@ function user(val){
 
 // console.log(user(username))
 addone(5)
-console.log(addone(5))
+// console.log(addone(5))
 function addone(num){
     return num+1
 }
@@ -48,7 +48,30 @@ function addone(num){
 const addtwo=function(num){
     return num+2
 }
-console.log(addtwo(5))
+// console.log(addtwo(5))
+
+
+//this keyword
+const user11={
+    username:"rushikesh",
+    age:21,
+    home : ()=> {
+        console.log(this)
+        return `${this.username},welcome home`
+    }
+}
+
+// console.log(user11.home())
+// user11.username="hithesh"
+// console.log(user11.home())
+// console.log(this);
+
+// function chai(){
+//     console.log(this);
+// }
+// chai()
+
+
 
 
 
