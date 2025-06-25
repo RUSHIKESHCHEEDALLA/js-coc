@@ -1,30 +1,43 @@
 //objects
-const obj={
-    name:"rushi",
-    age:18,
-    employed:false,
-};
-console.log(obj["name"]);
-obj["name"]="rushikesh";
-console.log(obj["name"]);
+// const obj={
+//     name:"rushi",
+//     age:18,
+//     employed:false,
+// };
+// console.log(obj["name"]);
+// obj["name"]="rushikesh";
+// console.log(obj["name"]);
 
-// Object.freeze(obj);
+// // Object.freeze(obj);
 
-obj["name"]="rushikeshch";
-console.log(obj);
+// obj["name"]="rushikeshch";
+// console.log(obj);
 
 
 
-obj.dob=function(){
-    console.log("may 31")
+// obj.dob=function(){
+//     console.log("may 31")
 
-}
-obj.val=function(){
-    console.log(`may 31 ${this.name}`)
+// }
+// obj.val=function(){
+//     console.log(`may 31 ${this.name}`)
 
-}
+// }
 
 // obj.dob();
 // console.log(obj.dob)
 
-obj.val();
+//obj.val();
+
+
+const user={
+    age:21,
+    fullname:{
+        username:{
+            fn:"rushikesh",
+            ln:"cheedalla",
+        }
+    }
+}
+
+console.log(user.fullname)
