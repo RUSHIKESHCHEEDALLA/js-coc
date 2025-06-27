@@ -15,10 +15,29 @@
 </body>
 <script>
     const val = document.querySelector('.parent')
-    console.log(val);
-    console.log(val.children);
-    for (let index = 0; index < val.children.length; index++) {
-        console.log(val.children[index].innerHTML);   
-    }
+    // console.log(val);
+    // console.log(val.children);
+    // for (let index = 0; index < val.children.length; index++) {
+    //     console.log(val.children[index].innerHTML);   
+    // };
+    val.children[1].style.color="red";
+    // console.log(val.firstElementChild);
+    // console.log(val.lastElementChild);
+    const dayOne=document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    const dayTwo=dayOne.nextElementSibling;
+    console.log(dayTwo);
+    console.log(dayTwo.parentElement);
+    const dayThree=dayTwo.nextElementSibling;
+    console.log(dayThree);
+
+    console.log("NODES:", val.childNodes);
+    
+
+    
+    
+
+    
 </script>
 </html>
