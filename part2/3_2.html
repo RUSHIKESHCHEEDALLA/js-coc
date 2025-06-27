@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element from script</title>
+</head>
+<body style="background-color: black; color: #fff;">
+</body>
+<script>
+    const data=document.createElement('div');
+    data.className="main";
+    // data.id="myname"
+    data.id=Math.round(Math.random()*10+1);
+    data.setAttribute("title","hello world");
+    data.style.padding="15-px";
+    data.style.color="red";
+    data.innerText="Hello World123";
+    // const add=document.createTextNode("Hello World");
+    // data.appendChild(add);
+    document.body.appendChild(data);
+    // console.log(data);
+</script>
+</html>
