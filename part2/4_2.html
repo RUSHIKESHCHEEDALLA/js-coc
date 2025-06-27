@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PART 4</title>
+</head>
+<body style= "background-color:black; color:white;">
+    <ul class="lang">
+        <li>
+            javascript
+        </li>
+    </ul>
+</body>
+<script>
+    //ADD
+    function add(item){
+        l=document.createElement('li');
+        l.innerHTML=`${item}`;
+        document.querySelector('.lang').appendChild(l);
+    };
+    add("python")
+    add("python3")
+    add("c")
+    add("cpp")
+
+    function  addopti(lang){
+        const l=document.createElement('li');
+        l.appendChild(document.createTextNode(lang));
+        document.querySelector('.lang').appendChild(l);
+    }
+    addopti("java")
+    //EDIT
+    const change=document.querySelector("li:nth-child(2)");
+    change.innerHTML="hi";
+    function edit(name,id){
+         const val=document.querySelector(`li:nth-child(${id})`)
+         val.innerHTML=`${name}`;
+    }
+    edit("golang",3);
+
+    const change1=document.querySelector("li:first-child");
+    change1.outerHTML='<li>hell</li>';
+
+    //remove
+
+    const change3=document.querySelector('li:last-child');
+    change3.remove();
+
+</script>
+</html>
